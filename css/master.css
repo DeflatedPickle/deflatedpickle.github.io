@@ -1,3 +1,7 @@
+* {
+	font-family: 'Roboto Mono', monospace;
+}
+
 div {
 	width: 70%;
 	margin-top: 50px;
@@ -6,6 +10,10 @@ div {
 
 h1 {
 	text-align: center;
+}
+
+h5 {
+	font-family: 'Roboto Mono 100', monospace;
 }
 
 .top {
