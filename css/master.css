@@ -8,7 +8,7 @@ html {
 }
 
 div {
-	width: 70%;
+	width: 90%;
 	margin-top: 50px;
 	margin-bottom: 50px;
     border-style: outset;
@@ -20,20 +20,6 @@ h1 {
 
 h5 {
 	font-family: 'Roboto Mono 100', monospace;
-}
-
-.top {
-	position: absolute;
-	top: 0;
-}
-
-.middle {
-	position: absolute;
-}
-
-.bottom {
-	position: absolute;
-	bottom: 0;
 }
 
 .center {
