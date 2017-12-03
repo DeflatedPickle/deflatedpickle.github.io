@@ -3,9 +3,7 @@ document.addEventListener("keydown", function(event) {
     if (event.keyCode == 13) {
         var value = document.getElementById("insert").value
         
-        var element = document.createElement("p");
-        element.innerHTML = value;
-        document.getElementById("new").appendChild(element);
+        insertParagraph(value);
         
         if (value == 1) {
             // About
@@ -18,3 +16,9 @@ document.addEventListener("keydown", function(event) {
         document.getElementById("insert").value = ""
     }
 })
+
+function insertParagraph(text) {
+    var element = document.createElement("p");
+    element.innerHTML = text;
+    document.getElementById("new").appendChild(element);
+}
