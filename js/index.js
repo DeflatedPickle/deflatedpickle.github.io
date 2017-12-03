@@ -1,7 +1,11 @@
 document.addEventListener("keydown", function(event) {
     event = event || window.Event;
     if (event.keyCode == 13) {
-        value = document.getElementById("insert").value
+        var value = document.getElementById("insert").value
+        
+        var element = document.createElement("p");
+        element.innerHTML = value;
+        document.getElementById("new").appendChild(element);
         
         if (value == 1) {
             // About

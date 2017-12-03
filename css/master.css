@@ -15,13 +15,6 @@ body {
     color: limegreen;
 }
 
-div {
-	width: 90%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-    border-style: outset;
-}
-
 h1 {
 	text-align: center;
 }
