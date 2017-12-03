@@ -10,5 +10,7 @@ document.addEventListener("keydown", function(event) {
         } else if (value == 3) {
             // Exit
         }
+        
+        document.getElementById("insert").value = ""
     }
 })
