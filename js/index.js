@@ -1,4 +1,6 @@
 document.addEventListener("keydown", function(event) {
     event = event || window.Event;
-    alert(event.keyCode);
+    if (event.keyCode == 13) {
+        value = document.getElementById("insert").value
+    }
 })
