@@ -33,6 +33,20 @@ p {
     white-space: pre;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul a {
+    color: limegreen;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: greenyellow;
+}
+
 /* Classes */
 
 .center {
