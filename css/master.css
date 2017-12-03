@@ -15,18 +15,6 @@ body {
     color: limegreen;
 }
 
-h1 {
-	text-align: center;
-}
-
-h5 {
-	font-family: 'Roboto Mono 100', monospace;
-}
-
-p {
-    white-space: pre;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -64,4 +52,8 @@ input[type=text]:focus {
 .project {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.title {
+    white-space: pre;
 }
