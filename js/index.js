@@ -11,6 +11,8 @@ document.addEventListener("keydown", function(event) {
             // Projects
         } else if (value == 3) {
             // Exit
+        } else {
+            insertParagraph(value + " is not a valid command.");
         }
         
         document.getElementById("insert").value = ""
