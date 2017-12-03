@@ -47,6 +47,20 @@ ul a:hover {
     color: greenyellow;
 }
 
+input[type=text] {
+    background: black;
+    color: limegreen;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid limegreen;
+    width: 97%;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-top: 2px solid limegreen;
+}
+
 /* Classes */
 
 .center {
