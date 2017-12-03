@@ -1,7 +1,7 @@
 document.addEventListener("keydown", function(event) {
     event = event || window.Event;
     if (event.keyCode == 13) {
-        var value = document.getElementById("insert").value
+        var value = document.getElementById("insert").value;
         
         insertParagraph(value);
         
@@ -11,11 +11,12 @@ document.addEventListener("keydown", function(event) {
             // Projects
         } else if (value == 3) {
             // Exit
+            window.close();
         } else {
             insertParagraph(value + " is not a valid command.");
         }
         
-        document.getElementById("insert").value = ""
+        document.getElementById("insert").value = "";
     }
 })
 
