@@ -58,7 +58,7 @@ input[type=text] {
 
 input[type=text]:focus {
     outline: none;
-    border-top: 2px solid limegreen;
+    /* border-top: 2px solid limegreen; */
 }
 
 /* Classes */
