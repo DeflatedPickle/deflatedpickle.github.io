@@ -46,15 +46,19 @@ document.addEventListener("keydown", function (event) {
                     // About
                     // insertParagraph("Retrieving about.");
                     insertParagraph("You decide that you want to read about just who this DeflatedPickle person is, or at least, who they think they are.");
-                    insertParagraph("A voice calls out to you, explaning that DeflatedPickle is a semi-experienced and hardly decent programmer, that specializes in Python, though, they have been branching out into more languages and frameworks.");
+                    insertParagraph("A voice calls out to you, explaning that DeflatedPickle is a semi-experienced and somewhat decent programmer, that specializes in Python, though, has been branching out into more languages and frameworks.");
                 } else if (value === 2) {
                     // Projects
                     mode = "projects";
-                    insertParagraph("Retrieving projects.");
+                    // insertParagraph("Retrieving projects.");
+                    insertParagraph("After some time of thinking, you decide that you would like to see just what projects this DeflatedPickle person has created and released unto the world.");
+                    insertParagraph("A piece of paper floats down from above, and you hear a whisper, 'pick it up'.");
+                    insertParagraph("You pick up the piece of paper. It seems to be a list of sorts.");
                     insertList(projects);
                 } else if (value === 3) {
                     // Exit
-                    insertParagraph("Exiting the website.");
+                    // insertParagraph("Exiting the website.");
+                    insertParagraph("You decide that this website is not for you, and so you take your leave.");
                     window.close();
                 } else {
                     insertParagraph(value + " is not a valid command.");
