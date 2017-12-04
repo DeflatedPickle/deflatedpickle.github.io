@@ -52,6 +52,8 @@ document.addEventListener("keydown", function (event) {
                     // insertParagraph("Retrieving about.");
                     insertParagraph("You decide that you want to read about just who this DeflatedPickle person is, or at least, who they think they are.");
                     insertParagraph("A voice calls out to you, explaning that DeflatedPickle is a semi-experienced and somewhat decent programmer, that specializes in Python. Though, has been branching out into more languages and frameworks.");
+                    insertParagraph("After hearing that, you take another look at the menu.");
+                    menu();
                 } else if (value === 2) {
                     // Projects
                     mode = "projects";
@@ -68,6 +70,7 @@ document.addEventListener("keydown", function (event) {
                 } else {
                     // insertParagraph(value + " is not a valid command.");
                     insertParagraph("You decide to ignore the list of commands that you were given and enter something completely different. However, this does not work, and so you take another look at the command list.");
+                    menu();
                 }
             } else if (mode === "projects") {
                 if (value < projects.length) {
@@ -75,6 +78,7 @@ document.addEventListener("keydown", function (event) {
                 } else if (value === projects.length) {
                     mode = "menu";
                     menu();
+                    insertParagraph("On second thought, maybe the projects list is not for you. You scamper back to the menu.");
                 } else {
                     insertParagraph(value + " is not a valid command.");
                 }
