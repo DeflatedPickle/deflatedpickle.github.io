@@ -1,5 +1,5 @@
 var mode = "menu";
-var projects = ["pkinter", "quill", "Colony", "MenuMaker", "Ellipsis", "Zipy", "Back"];
+var project_list = ["pkinter", "quill", "Colony", "MenuMaker", "Ellipsis", "Zipy", "Back"];
 var project_descriptions = ["A Python widget library for TkInter.",
                             "A Python library to ease creation to text-based games with Tkinter",
                             "A semi-advanced colony simulator/manager written 100% in Python and TkInter. Featuring basic AI, time and a fancy UI.",
@@ -36,6 +36,11 @@ function menu() {
     insertList(["About", "Projects", "Exit"]);
 }
 
+function projects() {
+    "use strict";
+    insertList(project_list);
+}
+
 document.addEventListener("keydown", function (event) {
     "use strict";
     event = event || window.Event;
@@ -61,7 +66,7 @@ document.addEventListener("keydown", function (event) {
                     insertParagraph("After some time of thinking, you decide that you would like to see just what projects this DeflatedPickle person has created and released unto the world.");
                     insertParagraph("A piece of paper floats down from above, and you hear a whisper, 'pick it up'.");
                     insertParagraph("You pick up the piece of paper. It seems to be a list of sorts.");
-                    insertList(projects);
+                    projects();
                 } else if (value === 3) {
                     // Exit
                     // insertParagraph("Exiting the website.");
@@ -73,10 +78,10 @@ document.addEventListener("keydown", function (event) {
                     menu();
                 }
             } else if (mode === "projects") {
-                if (value < projects.length) {
+                if (value < project_list.length) {
                     insertParagraph(project_descriptions[value - 1]);
-                    menu();
-                } else if (value === projects.length) {
+                    projects();
+                } else if (value === project_list.length) {
                     mode = "menu";
                     insertParagraph("On second thought, maybe the projects list is not for you. You scamper back to the menu.");
                     menu();
