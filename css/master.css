@@ -43,6 +43,10 @@ input[type=text]:focus {
     /* border-top: 2px solid limegreen; */
 }
 
+p {
+    white-space: pre;
+}
+
 /* Classes */
 
 .center {
@@ -52,8 +56,4 @@ input[type=text]:focus {
 .project {
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.title {
-    white-space: pre;
 }
