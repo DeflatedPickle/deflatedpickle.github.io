@@ -1,5 +1,6 @@
 var mode = "menu";
 var projects = ["pkinter", "quill"];
+var project_descriptions = ["A Python widget library for TkInter.", "A Python library to ease creation to text-based games with Tkinter"]
 
 function insertParagraph(text) {
     "use strict";
@@ -51,7 +52,11 @@ document.addEventListener("keydown", function (event) {
                     insertParagraph(value + " is not a valid command.");
                 }
             } else if (mode === "projects") {
-                
+                if (value < projects.length + 1) {
+                    
+                } else {
+                    insertParagraph(value + " is not a valid command.");
+                }
             }
 
             document.getElementById("insert").value = "";
