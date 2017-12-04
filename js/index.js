@@ -1,6 +1,11 @@
 var mode = "menu";
-var projects = ["pkinter", "quill", "Back"];
-var project_descriptions = ["A Python widget library for TkInter.", "A Python library to ease creation to text-based games with Tkinter"];
+var projects = ["pkinter", "quill", "Colony", "MenuMaker", "Ellipsis", "Zipy", "Back"];
+var project_descriptions = ["A Python widget library for TkInter.",
+                            "A Python library to ease creation to text-based games with Tkinter",
+                            "A semi-advanced colony simulator/manager written 100% in Python and TkInter. Featuring basic AI, time and a fancy UI.",
+                            "A Python library to reduce the lines required to make a TkInter menu down to 1.",
+                            "A text editor written for the web.",
+                            "A Zip file viewer written in Python."];
 
 function insertParagraph(text) {
     "use strict";
@@ -46,7 +51,7 @@ document.addEventListener("keydown", function (event) {
                     // About
                     // insertParagraph("Retrieving about.");
                     insertParagraph("You decide that you want to read about just who this DeflatedPickle person is, or at least, who they think they are.");
-                    insertParagraph("A voice calls out to you, explaning that DeflatedPickle is a semi-experienced and somewhat decent programmer, that specializes in Python, though, has been branching out into more languages and frameworks.");
+                    insertParagraph("A voice calls out to you, explaning that DeflatedPickle is a semi-experienced and somewhat decent programmer, that specializes in Python. Though, has been branching out into more languages and frameworks.");
                 } else if (value === 2) {
                     // Projects
                     mode = "projects";
