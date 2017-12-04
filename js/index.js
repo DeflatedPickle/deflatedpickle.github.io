@@ -44,7 +44,9 @@ document.addEventListener("keydown", function (event) {
                 // Switch statement?
                 if (value === 1) {
                     // About
-                    insertParagraph("Retrieving about.");
+                    // insertParagraph("Retrieving about.");
+                    insertParagraph("You decide that you want to read about just who this DeflatedPickle person is, or at least, who they think they are.");
+                    insertParagraph("A voice calls out to you, explaning that DeflatedPickle is a semi-experienced and hardly decent programmer, that specializes in Python, though, they have been branching out into more languages and frameworks.");
                 } else if (value === 2) {
                     // Projects
                     mode = "projects";
