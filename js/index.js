@@ -1,3 +1,6 @@
+var mode = "menu";
+var projects = ["pkinter", "quill"];
+
 function insertParagraph(text) {
     "use strict";
     var element = document.createElement("p");
@@ -31,19 +34,24 @@ document.addEventListener("keydown", function (event) {
         if (!isNaN(value)) {
             insertParagraph(value);
 
-            if (value === 1) {
-                // About
-                insertParagraph("Retrieving about.");
-            } else if (value === 2) {
-                // Projects
-                insertParagraph("Retrieving projects.");
-                insertList(["pkinter", "quill"]);
-            } else if (value === 3) {
-                // Exit
-                insertParagraph("Exiting the website.");
-                window.close();
-            } else {
-                insertParagraph(value + " is not a valid command.");
+            if (mode === "menu") {
+                if (value === 1) {
+                    // About
+                    insertParagraph("Retrieving about.");
+                } else if (value === 2) {
+                    // Projects
+                    mode = "projects";
+                    insertParagraph("Retrieving projects.");
+                    insertList(projects);
+                } else if (value === 3) {
+                    // Exit
+                    insertParagraph("Exiting the website.");
+                    window.close();
+                } else {
+                    insertParagraph(value + " is not a valid command.");
+                }
+            } else if (mode === "projects") {
+                
             }
 
             document.getElementById("insert").value = "";
