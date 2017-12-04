@@ -75,10 +75,11 @@ document.addEventListener("keydown", function (event) {
             } else if (mode === "projects") {
                 if (value < projects.length) {
                     insertParagraph(project_descriptions[value - 1]);
+                    menu();
                 } else if (value === projects.length) {
                     mode = "menu";
-                    menu();
                     insertParagraph("On second thought, maybe the projects list is not for you. You scamper back to the menu.");
+                    menu();
                 } else {
                     insertParagraph(value + " is not a valid command.");
                 }
