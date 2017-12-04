@@ -26,6 +26,11 @@ function insertList(list) {
     list_count += 1;
 }
 
+function menu() {
+    "use strict";
+    insertList(["About", "Projects", "Exit"]);
+}
+
 document.addEventListener("keydown", function (event) {
     "use strict";
     event = event || window.Event;
@@ -67,7 +72,3 @@ document.addEventListener("keydown", function (event) {
         }
     }
 });
-
-function menu() {
-    insertList(["About", "Projects", "Exit"]);
-}
