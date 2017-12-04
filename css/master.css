@@ -44,7 +44,7 @@ input[type=text]:focus {
 }
 
 p {
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 /* Classes */
@@ -56,4 +56,8 @@ p {
 .project {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.title {
+    white-space: pre;
 }
