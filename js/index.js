@@ -66,7 +66,8 @@ document.addEventListener("keydown", function (event) {
                     insertParagraph("You decide that this website is not for you, and so you take your leave.");
                     window.close();
                 } else {
-                    insertParagraph(value + " is not a valid command.");
+                    // insertParagraph(value + " is not a valid command.");
+                    insertParagraph("You decide to ignore the list of commands that you were given and enter something completely different. However, this does not work, and so you take another look at the command list.");
                 }
             } else if (mode === "projects") {
                 if (value < projects.length) {
