@@ -39,7 +39,7 @@ function insertList(list) {
     
     list.forEach(function(item, index, array) {
         var list_item = document.createElement("li");
-        list_item.innerHTML = item;
+        list_item.innerHTML = "[" + (index + 1) + "] " + item;
         document.getElementById(list_element.id).appendChild(list_item);
     });
     
