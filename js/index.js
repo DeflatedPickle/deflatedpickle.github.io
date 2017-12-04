@@ -71,4 +71,6 @@ document.addEventListener("keydown", function (event) {
             document.getElementById("insert").value = "";
         }
     }
+    
+    window.scrollTo(0, document.body.scrollHeight);
 });
