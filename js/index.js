@@ -57,6 +57,7 @@ document.addEventListener("keydown", function (event) {
                     insertParagraph(project_descriptions[value - 1]);
                 } else if (value === projects.length) {
                     mode = "menu";
+                    menu();
                 } else {
                     insertParagraph(value + " is not a valid command.");
                 }
