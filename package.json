@@ -1,0 +1,42 @@
+{
+  "main": "src/coffee/index.coffee",
+  "dependencies": {
+    "acorn-globals": "^4.3.1",
+    "autoprefixer": "^9.5.1",
+    "color-hash": "^1.0.3",
+    "precss": "^4.0.0",
+    "typed.js": "^2.0.10",
+    "vue": "^2.6.10",
+    "yargs-parser": "^13.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.11.0",
+    "opal-rb-loader": "0.0.2",
+    "postcss": "^7.0.2",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.3",
+    "pug-html-loader": "^1.1.5",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p"
+  },
+  "author": "DeflatedPickle",
+  "license": "MIT"
+}

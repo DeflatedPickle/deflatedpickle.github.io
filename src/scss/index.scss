@@ -1,0 +1,79 @@
+$light_cream: #D7D9B1;
+
+$darkest_blue: #3e505b;
+$dark_blue: #628395;
+$light_blue: #84acce;
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  color: $light_cream;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: $dark_blue;
+
+  border: {
+    bottom: {
+      style: solid;
+      width: 8px;
+    }
+
+    color: $light_blue;
+  }
+
+  padding: {
+    top: 20px;
+    bottom: 20px;
+  }
+
+  p {
+    display: inline;
+  }
+
+  text-align: center;
+  font-size: 36px;
+}
+
+footer {
+  background: $dark_blue;
+
+  padding: {
+    left: 10px;
+    right: 10px;
+  }
+
+  border: {
+    top: {
+      style: solid;
+      width: 8px;
+    }
+
+    color: $light_blue;
+  }
+}
+
+#content {
+  flex: 1 1 auto;
+  overflow: auto;
+
+  padding: {
+    left: 4%;
+    right: 4%;
+  }
+
+  background: $darkest_blue;
+}
