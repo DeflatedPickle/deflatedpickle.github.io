@@ -1,3 +1,4 @@
-style = require("../scss/index.scss");
+require("../scss/index.scss");
+require("../scss/404.scss");
 
-typed = require("../js/typed.js");
+require("../js/typed.js");

@@ -22,8 +22,8 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    "style-loader",
-                    MiniCssExtractPlugin.loader,
+                    "file-loader?name=[name].css",
+                    "extract-loader",
                     "css-loader",
                     "postcss-loader",
                     "sass-loader"
@@ -53,12 +53,21 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            template: "./src/pug/index.pug"
+            template: "./src/pug/index.pug",
+            filename: "index.html"
+        }),
+        new HtmlWebpackPlugin({
+            minify: {
+                collapseWhitespace: true
+            },
+            hash: true,
+            template: "./src/pug/404.pug",
+            filename: "404.html"
         }),
 
-        new MiniCssExtractPlugin({
-            filename: "bundle.css"
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename: "bundle.css"
+        // }),
 
         new VueLoaderPlugin()
     ]
